@@ -23,26 +23,26 @@ def main(speed=0, bg_color="grey"):
         size = 18
         pos = [np.random.randint(-300, 300), np.random.randint(-300, 300)]
 
-        """TODO: set snowflake color here (one of the colors defined above)"""
+        """TODO: set snowflakecreate color here (one of the colors defined above)"""
 
         R = random.randint(0, 255)
         B = random.randint(0, 255)
         G = random.randint(0, 255)
         myTurtle.color(R, G, B)
 
-        # Go to the start position of the snowflake
+        # Go to the start position of the snowflakecreate
         myTurtle.penup()
         myTurtle.goto(pos[0], pos[1])
         myTurtle.pendown()
 
-        # draw the snowflake
+        # draw the snowflakecreate
         for _ in range(8):
             snowflake_branch(size, myTurtle)
             myTurtle.left(45)
 
 
 def snowflake_branch(size, myTurtle):
-    # This function draws one branch of the snowflake.
+    # This function draws one branch of the snowflakecreate.
     for _ in range(3):
         for _ in range(3):
             myTurtle.forward(size / 3)
