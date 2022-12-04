@@ -10,6 +10,6 @@ setuptools.setup(
     description='Testing installation of Package',
     long_description=long_description,
     long_description_content_type="text/markdown",
-    packages=['snowflake'],
+    packages=['numpy', 'turtles', 'snowflake'],
     install_requires=['requests'],
 )
